@@ -4,13 +4,13 @@
 #
 Name     : perl-Algorithm-Diff
 Version  : 1.1903
-Release  : 1
+Release  : 2
 URL      : https://cpan.metacpan.org/authors/id/T/TY/TYEMQ/Algorithm-Diff-1.1903.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/T/TY/TYEMQ/Algorithm-Diff-1.1903.tar.gz
 Summary  : unknown
 Group    : Development/Tools
 License  : Artistic-1.0 GPL-1.0
-Requires: perl-Algorithm-Diff-man
+BuildRequires : buildreq-cpan
 
 %description
 This is a module for computing the difference between two files, two
@@ -19,12 +19,13 @@ algorithm similar to (or identical to) the one used by the Unix "diff"
 program.  It is guaranteed to find the *smallest possible* set of
 differences.
 
-%package man
-Summary: man components for the perl-Algorithm-Diff package.
-Group: Default
+%package dev
+Summary: dev components for the perl-Algorithm-Diff package.
+Group: Development
+Provides: perl-Algorithm-Diff-devel = %{version}-%{release}
 
-%description man
-man components for the perl-Algorithm-Diff package.
+%description dev
+dev components for the perl-Algorithm-Diff package.
 
 
 %prep
@@ -53,9 +54,9 @@ make TEST_VERBOSE=1 test
 %install
 rm -rf %{buildroot}
 if test -f Makefile.PL; then
-make pure_install PERL_INSTALL_ROOT=%{buildroot}
+make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
-./Build install --installdirs=site --destdir=%{buildroot}
+./Build install --installdirs=vendor --destdir=%{buildroot}
 fi
 find %{buildroot} -type f -name .packlist -exec rm -f {} ';'
 find %{buildroot} -depth -type d -exec rmdir {} 2>/dev/null ';'
@@ -64,14 +65,14 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/site_perl/5.26.1/Algorithm/Diff.pm
-/usr/lib/perl5/site_perl/5.26.1/Algorithm/DiffOld.pm
-/usr/lib/perl5/site_perl/5.26.1/Algorithm/cdiff.pl
-/usr/lib/perl5/site_perl/5.26.1/Algorithm/diff.pl
-/usr/lib/perl5/site_perl/5.26.1/Algorithm/diffnew.pl
-/usr/lib/perl5/site_perl/5.26.1/Algorithm/htmldiff.pl
+/usr/lib/perl5/vendor_perl/5.26.1/Algorithm/Diff.pm
+/usr/lib/perl5/vendor_perl/5.26.1/Algorithm/DiffOld.pm
+/usr/lib/perl5/vendor_perl/5.26.1/Algorithm/cdiff.pl
+/usr/lib/perl5/vendor_perl/5.26.1/Algorithm/diff.pl
+/usr/lib/perl5/vendor_perl/5.26.1/Algorithm/diffnew.pl
+/usr/lib/perl5/vendor_perl/5.26.1/Algorithm/htmldiff.pl
 
-%files man
+%files dev
 %defattr(-,root,root,-)
 /usr/share/man/man3/Algorithm::Diff.3
 /usr/share/man/man3/Algorithm::DiffOld.3
