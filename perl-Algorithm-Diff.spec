@@ -4,7 +4,7 @@
 #
 Name     : perl-Algorithm-Diff
 Version  : 1.1903
-Release  : 2
+Release  : 3
 URL      : https://cpan.metacpan.org/authors/id/T/TY/TYEMQ/Algorithm-Diff-1.1903.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/T/TY/TYEMQ/Algorithm-Diff-1.1903.tar.gz
 Summary  : unknown
@@ -65,12 +65,12 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.26.1/Algorithm/Diff.pm
-/usr/lib/perl5/vendor_perl/5.26.1/Algorithm/DiffOld.pm
-/usr/lib/perl5/vendor_perl/5.26.1/Algorithm/cdiff.pl
-/usr/lib/perl5/vendor_perl/5.26.1/Algorithm/diff.pl
-/usr/lib/perl5/vendor_perl/5.26.1/Algorithm/diffnew.pl
-/usr/lib/perl5/vendor_perl/5.26.1/Algorithm/htmldiff.pl
+/usr/lib/perl5/vendor_perl/5.28.0/Algorithm/Diff.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Algorithm/DiffOld.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Algorithm/cdiff.pl
+/usr/lib/perl5/vendor_perl/5.28.0/Algorithm/diff.pl
+/usr/lib/perl5/vendor_perl/5.28.0/Algorithm/diffnew.pl
+/usr/lib/perl5/vendor_perl/5.28.0/Algorithm/htmldiff.pl
 
 %files dev
 %defattr(-,root,root,-)
