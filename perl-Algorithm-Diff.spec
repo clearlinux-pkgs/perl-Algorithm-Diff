@@ -4,7 +4,7 @@
 #
 Name     : perl-Algorithm-Diff
 Version  : 1.1903
-Release  : 6
+Release  : 7
 URL      : https://cpan.metacpan.org/authors/id/T/TY/TYEMQ/Algorithm-Diff-1.1903.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/T/TY/TYEMQ/Algorithm-Diff-1.1903.tar.gz
 Summary  : unknown
