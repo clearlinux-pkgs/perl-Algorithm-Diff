@@ -65,12 +65,12 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.1Algorithm/Diff.pm
-/usr/lib/perl5/vendor_perl/5.28.1Algorithm/DiffOld.pm
-/usr/lib/perl5/vendor_perl/5.28.1Algorithm/cdiff.pl
-/usr/lib/perl5/vendor_perl/5.28.1Algorithm/diff.pl
-/usr/lib/perl5/vendor_perl/5.28.1Algorithm/diffnew.pl
-/usr/lib/perl5/vendor_perl/5.28.1Algorithm/htmldiff.pl
+/usr/lib/perl5/vendor_perl/5.28.1/Algorithm/Diff.pm
+/usr/lib/perl5/vendor_perl/5.28.1/Algorithm/DiffOld.pm
+/usr/lib/perl5/vendor_perl/5.28.1/Algorithm/cdiff.pl
+/usr/lib/perl5/vendor_perl/5.28.1/Algorithm/diff.pl
+/usr/lib/perl5/vendor_perl/5.28.1/Algorithm/diffnew.pl
+/usr/lib/perl5/vendor_perl/5.28.1/Algorithm/htmldiff.pl
 
 %files dev
 %defattr(-,root,root,-)
