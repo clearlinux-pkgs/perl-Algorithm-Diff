@@ -4,10 +4,10 @@
 #
 Name     : perl-Algorithm-Diff
 Version  : 1.1903
-Release  : 8
+Release  : 9
 URL      : https://cpan.metacpan.org/authors/id/T/TY/TYEMQ/Algorithm-Diff-1.1903.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/T/TY/TYEMQ/Algorithm-Diff-1.1903.tar.gz
-Summary  : unknown
+Summary  : Perl/CPAN Module Algorithm::Diff : Diff also Longest Common Subsequence
 Group    : Development/Tools
 License  : Artistic-1.0 GPL-1.0
 BuildRequires : buildreq-cpan
@@ -23,6 +23,7 @@ differences.
 Summary: dev components for the perl-Algorithm-Diff package.
 Group: Development
 Provides: perl-Algorithm-Diff-devel = %{version}-%{release}
+Requires: perl-Algorithm-Diff = %{version}-%{release}
 
 %description dev
 dev components for the perl-Algorithm-Diff package.
@@ -65,12 +66,12 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.1/Algorithm/Diff.pm
-/usr/lib/perl5/vendor_perl/5.28.1/Algorithm/DiffOld.pm
-/usr/lib/perl5/vendor_perl/5.28.1/Algorithm/cdiff.pl
-/usr/lib/perl5/vendor_perl/5.28.1/Algorithm/diff.pl
-/usr/lib/perl5/vendor_perl/5.28.1/Algorithm/diffnew.pl
-/usr/lib/perl5/vendor_perl/5.28.1/Algorithm/htmldiff.pl
+/usr/lib/perl5/vendor_perl/5.28.2/Algorithm/Diff.pm
+/usr/lib/perl5/vendor_perl/5.28.2/Algorithm/DiffOld.pm
+/usr/lib/perl5/vendor_perl/5.28.2/Algorithm/cdiff.pl
+/usr/lib/perl5/vendor_perl/5.28.2/Algorithm/diff.pl
+/usr/lib/perl5/vendor_perl/5.28.2/Algorithm/diffnew.pl
+/usr/lib/perl5/vendor_perl/5.28.2/Algorithm/htmldiff.pl
 
 %files dev
 %defattr(-,root,root,-)
