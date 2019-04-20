@@ -4,7 +4,7 @@
 #
 Name     : perl-Algorithm-Diff
 Version  : 1.1903
-Release  : 12
+Release  : 13
 URL      : https://cpan.metacpan.org/authors/id/T/TY/TYEMQ/Algorithm-Diff-1.1903.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/T/TY/TYEMQ/Algorithm-Diff-1.1903.tar.gz
 Summary  : Perl/CPAN Module Algorithm::Diff : Diff also Longest Common Subsequence
