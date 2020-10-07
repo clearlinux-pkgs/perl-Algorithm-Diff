@@ -1,5 +1,9 @@
 Revision history for Perl module Algorithm::Diff.
 
+1.200     2020-09-27
+        - new release with no new features, just preparing for a series of
+          bugfix releases
+
 1.19_03 2014-11-25
 - Fix documentation typos (RT 84981)
   contributed by dsteinbrunner
