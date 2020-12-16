@@ -1,5 +1,8 @@
 Revision history for Perl module Algorithm::Diff.
 
+1.201     2020-12-13
+        - speed up LCS when $keyGen is undef (RT 101105; thanks, XENU)
+
 1.200     2020-09-27
         - new release with no new features, just preparing for a series of
           bugfix releases
